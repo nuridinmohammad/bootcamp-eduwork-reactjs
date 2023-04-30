@@ -1,10 +1,10 @@
 import "./App.css";
-import Counter from "./tugas/component/Counter";
+import Portfolio from './tugas/portfolio'
 
 function App() {
 
   return <div className="App">
-    <Counter/>
+    <Portfolio/>
   </div>;
 }
 
