@@ -1,10 +1,10 @@
 import "./App.css";
-import Portfolio from './tugas/portfolio'
+import Validation from './tugas/form_validation/validation'
 
 function App() {
 
   return <div className="App">
-    <Portfolio/>
+    <Validation/>
   </div>;
 }
 
