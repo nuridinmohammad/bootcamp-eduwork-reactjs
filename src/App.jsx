@@ -1,10 +1,9 @@
-import "./App.css";
-import Validation from './tugas/form_validation/validation'
+import NewsApp from './tugas/newsApp/index'
 
 function App() {
 
   return <div className="App">
-    <Validation/>
+    <NewsApp/>
   </div>;
 }
 
