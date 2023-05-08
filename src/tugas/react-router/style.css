@@ -1,0 +1,12 @@
+.main{
+    background: #ddd;
+    height: 96vh;
+    padding: 3rem;
+    text-align: center;
+}
+
+.main nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
