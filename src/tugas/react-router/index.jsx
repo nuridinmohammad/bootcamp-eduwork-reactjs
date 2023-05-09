@@ -1,8 +1,13 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from './pages/home'
+import About from './pages/about'
+import Contact from './pages/contact'
+import Category from './pages/category'
 import './style.css'
 
-const index = () => {
+const Index = () => {
   const date = new Date()
   
   return (
@@ -27,4 +32,22 @@ const index = () => {
   );
 };
 
-export default index;
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index/>}>
+            <Route path="home" element={<Home/>}/>
+            <Route path="about" element={<About/>}/>
+            <Route path="contact" element={<Contact/>}/>
+            <Route path="category/:name" element={<Category/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;
+
