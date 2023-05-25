@@ -1,10 +1,10 @@
 import React from "react";
-import ReduxApp from './tugas/redux/index'
+import ReactExpress from './tugas/react-express/App'
 
 function App() {
   return (
     <div className="App">
-      <ReduxApp/>
+      <ReactExpress/>
     </div>
   );
 }
